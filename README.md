@@ -1,1 +1,1 @@
-This sit is currently under maintenance.
+This site is currently under development by the team. Thank you for visitng.

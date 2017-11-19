@@ -11,6 +11,10 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.fit {
+	max-width: 99%;
+	min-width: 99%;
+}
 :root {
   --blue: #033C73;
   --indigo: #6610f2;
@@ -3830,6 +3834,7 @@ tbody.collapse.show {
 
 .navbar {
   position: relative;
+	min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

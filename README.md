@@ -1,1 +1,1 @@
-This site is currently under development by the team. Thank you for visitng.
+This site is currently under development by the team. Thank you for visiting.

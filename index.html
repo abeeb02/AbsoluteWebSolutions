@@ -8,6 +8,9 @@
     <meta author="Richard and Amber Ball">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <script type="text/javascript" src="scripts/index.js"></script>
   </head>
   <body>
     <div class="nav">
@@ -29,9 +32,14 @@
         </div>
 </nav>
 <div class="jumbotron">
-  <h1>Absolute Web Solutions</h1>
-  <p class="pull-right">Fresh. Innovative. Fun.</p>
-  <button type="button" class="btn btn-primary">Let's Go &raquo;</button>
+  <div class="container-fluid">
+      <h1 id="indexHeader">Absolute Web Solutions</h1>
+      <div class="header-content">
+          <h2>Fresh. Innovative. Fun.</h2>
+          <button id="goBtn" type="button" class="btn btn-lg cutsom-btn" onclick="{ alert('That tickles!'); }">Let's Go &raquo;</button>
+      </div>
+      </div>
+  </div>
 </div>
     </div>
   </body>

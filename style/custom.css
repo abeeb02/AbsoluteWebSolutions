@@ -4,6 +4,9 @@
     font-family: 'Space Mono', monospace;}
 .jumbotron {
     background-color: #cb4335;
+    background-image: url('../images/jumbo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
     opacity: .7;
 }
 #indexHeader {

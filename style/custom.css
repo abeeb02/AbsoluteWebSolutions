@@ -20,3 +20,12 @@
     background-color: #900C3F;
     border-color: #900C3F;
 }
+#aboutHeader {
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
+    margin-left: 25px;
+}
+.aboutHeader-content {
+    margin-left: 50px;
+    color: #ffffff;
+}

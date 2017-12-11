@@ -1,0 +1,22 @@
+.header-content {
+    margin-left: 50px;
+    color: #ffffff;
+}
+.jumbotron {
+    background-color: #cb4335;
+    opacity: .7;
+}
+#indexHeader {
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
+    margin-left: 25px;
+}
+#goBtn {
+    background-color: #C70039;
+    border-color: #C70039;
+    border-radius: 12px;
+}
+#goBtn:hover {
+    background-color: #900C3F;
+    border-color: #900C3F;
+}

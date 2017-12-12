@@ -48,3 +48,19 @@
 #blinky:hover{
     color: #ffffff;
 }
+<<<<<<< HEAD
+#goBtn:hover {
+    background-color: #900C3F;
+    border-color: #900C3F;
+}
+#aboutHeader {
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
+    margin-left: 25px;
+}
+.aboutHeader-content {
+    margin-left: 50px;
+    color: #ffffff;
+}
+=======
+>>>>>>> 5f5e3692ff8813ca9bad7b53865d893ae54b6723

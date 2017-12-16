@@ -1,7 +1,36 @@
+body {
+    background-image: url('../images/ArcadeGame.jpg');
+    color: #ffffff;
+}
+
+.aboutHeaderContent {
+    position: center;
+    color: #ffffff;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.aboutHeader {
+    position: center;
+    color: #ffffff;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.aboutJumbotron {
+    text-align: center;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-content {
     margin-left: 50px;
-    color:  #cb4335;
-    font-family: 'Space Mono', monospace;}
+    color: #cb4335;
+    font-family: 'Space Mono', monospace;
+}
+
 .jumbotron {
     background-color: #cb4335;
     background-image: url('../images/jumbo.svg');
@@ -9,58 +38,81 @@
     background-position: right;
     opacity: .7;
 }
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
 #indexHeader {
     font-family: 'Monoton', cursive;
     color: #ffffff;
     margin-left: 25px;
 }
+
 #goBtn {
-    background-color:  #FFC300;
-    border-color:  #FFC300;
+    background-color: #FFC300;
+    border-color: #FFC300;
     border-radius: 12px;
-    margin-left:40%;
+    margin-left: 40%;
     font-family: 'Space Mono', monospace;
     font-size: 24px;
     white-space: nowrap;
 }
-#goBtn:hover{
-    background-color:  #85c1e9;
-    border-color:  #85c1e9;
+
+#goBtn:hover {
+    background-color: #85c1e9;
+    border-color: #85c1e9;
 }
+
 #blinky {
     white-space: nowrap;
-    -webkit-animation: 1s blink step-end 
-    infinite;
+    -webkit-animation: 1s blink step-end infinite;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite;
 }
-  @-moz-keyframes blink {
-    from, to {
-      color: transparent;
+
+@-moz-keyframes blink {
+    from,
+    to {
+        color: transparent;
     }
     50% {
-      color: #ffffff;;
+        color: #ffffff;
+        ;
     }
-  }
-#blinky:hover{
+}
+
+#blinky:hover {
     color: #ffffff;
 }
-<<<<<<< HEAD
+
 #goBtn:hover {
     background-color: #900C3F;
     border-color: #900C3F;
 }
-#aboutHeader {
-    font-family: 'Monoton', cursive;
-    color: #ffffff;
-    margin-left: 25px;
+
+.img-circle {
+    border-radius: 50%;
 }
-.aboutHeader-content {
-    margin-left: 50px;
-    color: #ffffff;
+
+.image-holder {
+    border: 5px solid #ffffff;
+    background-position: 0;
+    width: 148px;
+    height: 148px;
+    background-size: 140px;
+    margin-top: -4px;
 }
-=======
->>>>>>> 5f5e3692ff8813ca9bad7b53865d893ae54b6723
+
+.rb {
+    color: #ffffff;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}

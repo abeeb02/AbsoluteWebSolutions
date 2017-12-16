@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Absolute Web Solutions</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Online portfolio for our projects">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta author="Richard and Amber Ball">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style/custom.css">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <script type="text/javascript" src="scripts/index.js"></script>
-  </head>
-  <body>
-    <div class="nav">
-      <nav class="navbar navbar-default">
-        <ul class="nav nav-tabs">
-          <li class=""><a href="index.html" data-toggle="tab" aria-expanded="true">Home</a></li>
-          <li class=""><a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a></li>
-          <li class="active"><a href="about.html">About</a></li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade active in" id="home">
-          </div>
-          <div class="tab-pane fade" id="profile">
-          </div>
-          <div class="tab-pane fade" id="dropdown1">
-          </div>
-          <div class="tab-pane fade" id="dropdown2">
-          </div>
+
+<head>
+  <title>Absolute Web Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Online portfolio for our projects">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta author="Richard and Amber Ball">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton|Press+Start+2P|Space+Mono" rel="stylesheet">
+  <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+
+<body class="container-fluid">
+  <div class="nav">
+    <nav class="navbar navbar-default">
+      <ul class="nav nav-tabs">
+        <li class="">
+          <a href="index.html" data-toggle="tab" aria-expanded="true">Home</a>
+        </li>
+        <li class="">
+          <a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a>
+        </li>
+        <li class="active">
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="home">
         </div>
-</nav>
-<div class="jumbotron">
-  <div class="container-fluid">
-      <h1 id="indexHeader">About The Team</h1>
-      <div class="header-content">
-          <h2>Focus. Passion. Creativity.</h2>
+        <div class="tab-pane fade" id="profile">
+        </div>
+        <div class="tab-pane fade" id="dropdown1">
+        </div>
+        <div class="tab-pane fade" id="dropdown2">
+        </div>
       </div>
-      </div>
+    </nav>
   </div>
-</div>
+  <div class="aboutJumbotron">
+    <div class="container-fluid">
+      <h1 class="aboutHeader">About The Team</h1>
+      <div>
+        <h3 class="aboutHeaderContent">Focus. Passion. Creativity.</h3>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+      <img class="image-holder center-block img-circle" url('../images/richard.jpg') alt="Richard Ball">
+      <h2 class="rb">Richard Ball</h2>
+      <p class="text-short text-center m-t-30"> This will hold the path of my development career.</p>
+    </div>
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+      <img class="mage-holder center-block img-circle" src="" alt="Amber Ball">
+    </div>
+  </div>
+</body>
+
 </html>

@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Absolute Web Solutions</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Online portfolio for our projects">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta author="Richard and Amber Ball"
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-  </head>
-  <body>
-    <div class="nav">
-      <nav class="navbar navbar-default">
-        <ul class="nav nav-tabs">
-          <li class=""><a href="index.html" data-toggle="tab" aria-expanded="true">Home</a></li>
-          <li class="active"><a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a></li>
-          <li class=""><a href="about.html">About</a></li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade active in" id="home">
-          </div>
-          <div class="tab-pane fade" id="profile">
-          </div>
-          <div class="tab-pane fade" id="dropdown1">
-          </div>
-          <div class="tab-pane fade" id="dropdown2">
-          </div>
+
+<head>
+  <title>Absolute Web Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Online portfolio for our projects">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta author="Richard and Amber Ball" <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton|Press+Start+2P|Space+Mono" rel="stylesheet">
+</head>
+
+<body class="projects-background">
+  <div class="nav">
+    <nav class="navbar navbar-default">
+      <ul class="nav nav-tabs">
+        <li class=""><a href="index.html" data-toggle="tab" aria-expanded="true">Home</a></li>
+        <li class="active"><a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a></li>
+        <li class=""><a href="about.html">About</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="home">
         </div>
-</nav>
-<div class="jumbotron">
-    <div class="container-fluid">
-        <h1 id="indexHeader">Team Projects</h1>
-        <div class="header-content">
-            <h2>Fresh. Innovative. Fun.</h2>
+        <div class="tab-pane fade" id="profile">
         </div>
+        <div class="tab-pane fade" id="dropdown1">
         </div>
+        <div class="tab-pane fade" id="dropdown2">
+        </div>
+      </div>
+    </nav>
+    <div class="projects-header-jumbrotron">
+      <div class="container-fluid">
+        <h1 class="projects-header-content">Our Projects</h1>
+        <h2 class="projects-header-content">Fresh. Innovative. Fun.</h2>
+      </div>
     </div>
-  </body>
+  </div>
+  <ul class="gird-list">
+    <li class="item-repo">
+      <h2>Website Portfolio</h2>
+      <a href="https://www.therobsonwedding2018.com/" class="screen">
+        <span>The Robson Wedding 2018</span>
+        <div class="main" style="background-image:url(/images/portfolio/trw.jpg);">
+        </div>
+      </a>
+    </li>
+  </ul>
+<style>
+  body {
+    background-image: none;
+  }
+</style>
+</body>
 </html>

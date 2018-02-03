@@ -1,18 +1,21 @@
 body {
     background-image: url('../images/ArcadeGame.jpg');
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 .aboutHeaderContent {
     position: center;
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 .aboutHeader {
     position: center;
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 3px #FFFFFF, 0 0 10px #FF69B4, 0 0 60px #C43B45;
 }
 
 .aboutJumbotron {
@@ -46,6 +49,7 @@ nav.navbar {
     background-color: transparent;
     border-color: transparent;
 }
+
 #coolBackground {
     position: absolute;
     width: 100%;
@@ -99,6 +103,10 @@ nav.navbar {
     border-color: #900C3F;
 }
 
+#aboutMain {
+    margin-top: 6%;
+}
+
 .img-circle {
     border-radius: 50%;
 }
@@ -106,23 +114,50 @@ nav.navbar {
 .image-holder {
     border: 5px solid #ffffff;
     background-position: 0;
-    width: 148px;
-    height: 148px;
+    width: 250px;
+    height: 250px;
     background-size: 140px;
     margin-top: -4px;
 }
+    .image-holder:hover {
+        cursor:pointer;
+        box-shadow: 0 0 20px 4px  #C43B45;
+    }
 
-.rb {
+#aboutContainer {
+    margin-top: 25%;
+    margin-bottom: 0px;
+    padding-bottom: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(transparent, #333399 50%);
+}
+
+#aboutMain {
+    margin-bottom: 15%;
+}
+
+    #aboutMain > div > img {
+        margin-bottom: 40px;
+    }
+
+h2.rb, h2.ab {
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+}
+
+.rb, .ab {
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    font-weight: 300;
     text-align: center;
 }
 
-.ab {
-    color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
-    text-align: center;
-}
+    .rb.text-short, .ab.text-short {
+        margin-bottom: 5%;
+        font-family: sans-serif 300;
+    }
 
 .text-center {
     text-align: center;

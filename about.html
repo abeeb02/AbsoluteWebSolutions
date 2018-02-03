@@ -10,22 +10,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style/custom.css">
-  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton|Press+Start+2P|Space+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton|Press+Start+2P|Space+Mono" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
   <script type="text/javascript" src="scripts/index.js"></script>
 </head>
 
 <body>
+  <div id="aboutContainer"></div>
   <div class="nav">
     <nav class="navbar navbar-default">
       <ul class="nav nav-tabs">
-        <li class="">
-          <a href="index.html" data-toggle="tab" aria-expanded="true">Home</a>
+        <li>
+          <a href="index.html" data-toggle="popover" data-content="Home">
+            <i class="material-icons">home</i></a>
         </li>
         <li class="">
-          <a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a>
+          <a href="projects.html" data-toggle="popover" data-content="Projects">
+            <i class="material-icons">computer</i></a>
         </li>
         <li class="active">
-          <a href="about.html">About</a>
+          <a class="active" href="about.html" data-toggle="popover" data-content="About">
+            <i class="material-icons">group</i></a>
         </li>
       </ul>
       <div id="myTabContent" class="tab-content">
@@ -41,25 +49,109 @@
     </nav>
   </div>
   <div class="aboutJumbotron">
-    <div class="container-fluid">
+    <div class="container">
       <h1 class="aboutHeader">About The Team</h1>
       <div>
         <h3 class="aboutHeaderContent">Focus. Passion. Creativity.</h3>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
-      <img class="image-holder center-block img-circle" url('../images/richard.jpg') alt="Richard Ball">
+  <div id="aboutMain" class="row">
+    <div class="col-lg-4 col-lg-offset-2">
+      <img id="spaceShip" src="images/SpaceShip.png">
+      <img class="image-holder center-block img-circle" src="images/richard.jpg" alt="Richard Ball">
       <h2 class="rb">Richard Ball</h2>
       <p class="rb text-short text-center m-t-30">This will hold the path of my development career.</p>
     </div>
-    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
-      <img class="image-holder center-block img-circle" url('../images/amber.jpg') alt="Amber Ball">
+    <div class="col-lg-4">
+      <img class="image-holder center-block img-circle" src="images/amber.jpg" alt="Amber Ball">
       <h2 class="rb">Amber Ball</h2>
       <p class="ab text-short text-center m-t-30">This will hold the path of Amber's development career.</p>
     </div>
   </div>
-</body>
+  <style>
+    .nav {
+      border: none;
+    }
+      .nav > nav > ul {
+        margin-right: 2%;
+        margin-top: 1%;
+        text-align: center;
+        float: right;
+      }
+      .nav > nav > ul > li > a {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: #000000;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0px;
+        padding-top: 18%;
+        text-align: center;
+      }
+      .nav > nav > ul > li > a.active {
+        background-color:#C43B45;
+        border: 1px solid #C43B45;
+        color: #ffffff;
+      }
+      .nav > nav > ul > li > a:hover, .nav > nav > ul > li > a.active:hover {
+        box-shadow: 0 0 20px 4px  #C43B45;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: #C43B45;
+      }
 
+      .popover {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+        .popover > .popover-content {
+          font-family: 'Space Mono', monospace;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 12px;
+        }
+      #spaceShip {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        top: 50%;
+        transform: rotate(-90deg);
+      }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover({
+        container: 'body',
+        delay: 0,
+        placement: 'bottom',
+        trigger: 'hover'
+      });
+
+      $('#spaceShip').hide();
+
+      $('.image-holder').on('click', function(e) {
+        $('#spaceShip').show();
+        $('#spaceShip').animate({
+          right: "+=150"
+        }, 2000, function() {
+          $(this).css('transform', 'rotate(0deg)');
+        });
+        $('#spaceShip').animate({
+          top: "-=500"
+        }, 2000, function() {
+          $(this).css('right', '80%');
+          $(this).css('top', '50%');
+          $(this).css('transform', 'rotate(-90deg)');
+          $(this).hide();
+        });
+      });
+    });
+  </script>
+</body>
 </html>

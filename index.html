@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="style/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton|Press+Start+2P|Space+Mono" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
   </head>
   <body>
@@ -19,43 +21,46 @@
     <div id="coolBackground"></div>
     <div class="nav">
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <ul class="nav nav-pills">
-            <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Home</a></li>
-            <li class=""><a href="projects.html" data-toggle="tab" aria-expanded="false">Projects</a></li>
-            <li class=""><a href="about.html">About</a></li>
-          </ul>
-          <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="home">
-            </div>
-            <div class="tab-pane fade" id="profile">
-            </div>
-            <div class="tab-pane fade" id="dropdown1">
-            </div>
-            <div class="tab-pane fade" id="dropdown2">
-            </div>
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="index.html" data-toggle="popover" data-content="Home">
+              <i class="material-icons">home</i>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" data-toggle="popover" data-content="Projects">
+              <i class="material-icons">computer</i>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="about.html" data-toggle="popover" data-content="About">
+              <i class="material-icons">group</i>
+            </a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="home">
+          </div>
+          <div class="tab-pane fade" id="profile">
+          </div>
+          <div class="tab-pane fade" id="dropdown1">
+          </div>
+          <div class="tab-pane fade" id="dropdown2">
           </div>
         </div>
-</nav>
-<div class="jumbotron">
-  <div class="container-fluid">
-      <h1 id="indexHeader">Absolute Web Solutions</h1>
-      <div class="header-content">
-          <h2 style="color: #ffffff; font-family: 'Space Mono', monospace;">
-            Fresh. Innovative. Fun.</h2><br /><br />
-          <button href="../about.html" id="goBtn" type="button" class="btn btn-lg btn-primary" style="color: #ffffff;">
-            <strong>Start</strong><a id="blinky">_</a></button><br /><br /><br />
-      </div>
-      </div>
-  </div>
-</div>
+      </nav>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function(){
-      $('#goBtn').on('click', function(){
-          alert('that tickels');
-        });
-      });
-    </script>
+    <div class="jumbotron">
+      <div class="container-fluid">
+          <h1 id="indexHeader">Absolute Web Solutions</h1>
+          <div class="header-content">
+              <h2 style="color: #ffffff; font-family: 'Space Mono', monospace;">
+                Fresh. Innovative. Fun.</h2><br /><br />
+              <button href="../about.html" id="goBtn" type="button" class="btn btn-lg btn-primary" style="color: #ffffff;">
+                <strong>Start</strong><a id="blinky">_</a></button><br /><br /><br />
+          </div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -27,11 +27,11 @@
           <a href="index.html" data-toggle="popover" data-content="Home">
             <i class="material-icons">home</i></a>
         </li>
-        <li class="">
+        <li>
           <a href="projects.html" data-toggle="popover" data-content="Projects">
             <i class="material-icons">computer</i></a>
         </li>
-        <li class="active">
+        <li>
           <a class="active" href="about.html" data-toggle="popover" data-content="About">
             <i class="material-icons">group</i></a>
         </li>
@@ -64,94 +64,11 @@
       <p class="rb text-short text-center m-t-30">This will hold the path of my development career.</p>
     </div>
     <div class="col-lg-4">
+      <img id="mrsPacMan" src="images/mrspacman.png" alt="Amber Beebe">
       <img class="image-holder center-block img-circle" src="images/amber.jpg" alt="Amber Ball">
       <h2 class="rb">Amber Ball</h2>
       <p class="ab text-short text-center m-t-30">This will hold the path of Amber's development career.</p>
     </div>
   </div>
-  <style>
-    .nav {
-      border: none;
-    }
-      .nav > nav > ul {
-        margin-right: 2%;
-        margin-top: 1%;
-        text-align: center;
-        float: right;
-      }
-      .nav > nav > ul > li > a {
-        background-color: #ffffff;
-        border: 1px solid #ffffff;
-        color: #000000;
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0px;
-        padding-top: 18%;
-        text-align: center;
-      }
-      .nav > nav > ul > li > a.active {
-        background-color:#C43B45;
-        border: 1px solid #C43B45;
-        color: #ffffff;
-      }
-      .nav > nav > ul > li > a:hover, .nav > nav > ul > li > a.active:hover {
-        box-shadow: 0 0 20px 4px  #C43B45;
-        background-color: #ffffff;
-        border: 1px solid #ffffff;
-        color: #C43B45;
-      }
-
-      .popover {
-        background-color: transparent;
-        border: 1px solid #ffffff;
-      }
-        .popover > .popover-content {
-          font-family: 'Space Mono', monospace;
-        color: #ffffff;
-        font-weight: 300;
-        font-size: 12px;
-        }
-      #spaceShip {
-        position: fixed;
-        height: 50px;
-        width: 50px;
-        top: 50%;
-        transform: rotate(-90deg);
-      }
-  </style>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('[data-toggle="popover"]').popover({
-        container: 'body',
-        delay: 0,
-        placement: 'bottom',
-        trigger: 'hover'
-      });
-
-      $('#spaceShip').hide();
-
-      $('.image-holder').on('click', function(e) {
-        $('#spaceShip').show();
-        $('#spaceShip').animate({
-          right: "+=150"
-        }, 2000, function() {
-          $(this).css('transform', 'rotate(0deg)');
-        });
-        $('#spaceShip').animate({
-          top: "-=500"
-        }, 2000, function() {
-          $(this).css('right', '80%');
-          $(this).css('top', '50%');
-          $(this).css('transform', 'rotate(-90deg)');
-          $(this).hide();
-        });
-      });
-    });
-  </script>
 </body>
 </html>

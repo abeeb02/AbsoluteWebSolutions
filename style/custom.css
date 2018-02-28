@@ -1,25 +1,9 @@
+/****************Site Custom CSS****************************/
+/**********************************************************/
 body {
     background-image: url('../images/ArcadeGame.jpg');
     color: #ffffff;
     overflow-x: hidden;
-}
-
-.aboutHeaderContent {
-    position: center;
-    color: #ffffff;
-    font-family: 'Space Mono', monospace;
-}
-
-.aboutHeader {
-    position: center;
-    color: #ffffff;
-    font-family: 'Monoton', cursive;
-    font-size: 60px;
-    text-shadow: 0 0 3px #FFFFFF, 0 0 10px #FF69B4, 0 0 60px #C43B45;
-}
-
-.aboutJumbotron {
-    text-align: center;
 }
 
 .center-block {
@@ -44,11 +28,79 @@ body {
     opacity: .7;
     height: 100%;
 }
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
 nav.navbar {
     padding: 10px;
     background-color: transparent;
     border-color: transparent;
 }
+
+    .nav {
+      border: none;
+    }
+      .nav > nav > ul {
+        margin-right: 2%;
+        margin-top: 1%;
+        text-align: center;
+        float: right;
+      }
+        .nav > nav > ul > li > a {
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            color: #000000;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0px;
+            padding-top: 18%;
+            text-align: center;
+        }
+        .nav > nav > ul > li > a.active {
+            background-color:#C43B45;
+            border: 1px solid #C43B45;
+            color: #ffffff;
+        }
+        .nav > nav > ul > li > a:hover, 
+        .nav > nav > ul > li > a.active:hover {
+            box-shadow: 0 0 20px 4px  #C43B45;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            color: #C43B45;
+        }
+
+      .popover {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+        .popover > .popover-content {
+            font-family: 'Space Mono', monospace;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 12px;
+        }
+/****************Custom CSS for Index Page******************/
+/**********************************************************/
+#blinky {
+    white-space: nowrap;
+    -webkit-animation: 1s blink step-end infinite;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+    #blinky:hover {
+        color: #ffffff;
+    }
 
 #coolBackground {
     position: absolute;
@@ -56,10 +108,6 @@ nav.navbar {
     height: 100%;
     background-image: linear-gradient(#19547b, #CB3066);
     opacity: .35;
-}
-
-.m-t-30 {
-    margin-top: 30px;
 }
 
 #indexHeader {
@@ -79,32 +127,28 @@ nav.navbar {
     white-space: nowrap;
 }
 
-#goBtn:hover {
-    background-color: #85c1e9;
-    border-color: #85c1e9;
-}
-
-#blinky {
-    white-space: nowrap;
-    -webkit-animation: 1s blink step-end infinite;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-
-#blinky:hover {
+    #goBtn:hover {
+        background-color: #900C3F;
+        border-color: #900C3F;
+    }
+/****************Custom CSS for About Page******************/
+/**********************************************************/
+.aboutHeader {
+    position: center;
     color: #ffffff;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 3px #FFFFFF, 0 0 10px #FF69B4, 0 0 60px #C43B45;
 }
 
-#goBtn:hover {
-    background-color: #900C3F;
-    border-color: #900C3F;
+.aboutHeaderContent {
+    position: center;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
 }
 
-#aboutMain {
-    margin-top: 6%;
+.aboutJumbotron {
+    text-align: center;
 }
 
 .img-circle {
@@ -124,6 +168,30 @@ nav.navbar {
         box-shadow: 0 0 20px 4px  #C43B45;
     }
 
+h2.rb, 
+h2.ab {
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+}
+
+.rb, 
+.ab {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+    .rb.text-short, 
+    .ab.text-short {
+        margin-bottom: 5%;
+        font-family: sans-serif 300;
+    }
+
+.text-center {
+    text-align: center;
+}
+
 #aboutContainer {
     margin-top: 25%;
     margin-bottom: 0px;
@@ -135,6 +203,7 @@ nav.navbar {
 }
 
 #aboutMain {
+    margin-top: 6%;
     margin-bottom: 15%;
 }
 
@@ -142,23 +211,12 @@ nav.navbar {
         margin-bottom: 40px;
     }
 
-h2.rb, h2.ab {
-    font-size: 30px;
-    font-family: 'Space Mono', monospace;
+#spaceShip, 
+#mrsPacMan {
+position: fixed;
+height: 50px;
+width: 50px;
+top: 50%;
+transform: rotate(-90deg);
 }
-
-.rb, .ab {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-}
-
-    .rb.text-short, .ab.text-short {
-        margin-bottom: 5%;
-        font-family: sans-serif 300;
-    }
-
-.text-center {
-    text-align: center;
-}
+/**********************************************************/

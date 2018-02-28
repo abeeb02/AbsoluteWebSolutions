@@ -64,12 +64,16 @@
       <p class="rb text-short text-center m-t-30">This will hold the path of my development career.</p>
     </div>
     <div class="col-lg-4">
+        <!--<img id="spaceShip" src="images/mrspacman.png">-->
       <img class="image-holder center-block img-circle" src="images/amber.jpg" alt="Amber Ball">
       <h2 class="rb">Amber Ball</h2>
       <p class="ab text-short text-center m-t-30">This will hold the path of Amber's development career.</p>
     </div>
   </div>
   <style>
+    body {
+      cursor: url("images/mrspacman.png"), auto;
+    }
     .nav {
       border: none;
     }
@@ -121,6 +125,14 @@
         height: 50px;
         width: 50px;
         top: 50%;
+        transform: rotate(-90deg);
+      }
+      #mrspacman {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        top: 50%;
+        right: 20%;
         transform: rotate(-90deg);
       }
   </style>

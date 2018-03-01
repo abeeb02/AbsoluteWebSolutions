@@ -6,11 +6,16 @@ $(document).ready(function () {
         placement: 'bottom',
         trigger: 'hover'
     });
+    //Make Start button blink
+    setInterval(function() {
+        ($('#blinky').css("visibility") === "visible") ?
+            $('#blinky').css("visibility", "hidden") :
+            $('#blinky').css("visibility", "visible");
+      }, 750);
     //Event Listeners
-    $('#goBtn').on('click', function () {
-        alert('that tickels');
+    $('#secretGameStart').on('click', function(e) {
+        
     });
-
     $('.image-holder').on('click', function (e) {
         if ($(this).attr('alt') === "Richard Ball") {
             setAnimateProperties("rb");

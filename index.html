@@ -17,25 +17,21 @@
     <script type="text/javascript" src="scripts/index.js"></script>
   </head>
   <body>
-    <div id="bodyCover"></div>
-    <div id="coolBackground"></div>
+    <div id="indexContainer"></div>
     <div class="nav">
       <nav class="navbar navbar-default">
         <ul class="nav nav-tabs">
           <li>
-            <a href="index.html" data-toggle="popover" data-content="Home">
-              <i class="material-icons">home</i>
-            </a>
+            <a class="active" href="index.html" data-toggle="popover" data-content="Home">
+              <i class="material-icons">home</i></a>
           </li>
           <li>
             <a href="projects.html" data-toggle="popover" data-content="Projects">
-              <i class="material-icons">computer</i>
-            </a>
+              <i class="material-icons">computer</i></a>
           </li>
           <li>
-            <a class="active" href="about.html" data-toggle="popover" data-content="About">
-              <i class="material-icons">group</i>
-            </a>
+            <a href="about.html" data-toggle="popover" data-content="About">
+              <i class="material-icons">group</i></a>
           </li>
         </ul>
         <div id="myTabContent" class="tab-content">
@@ -52,15 +48,41 @@
     </div>
     <div class="jumbotron">
       <div class="container-fluid">
-          <h1 id="indexHeader">Absolute Web Solutions</h1>
+          <h1 id="indexHeader">Absolute Web <br/>Solutions</h1>
           <div class="header-content">
-              <h2 style="color: #ffffff; font-family: 'Space Mono', monospace;">
-                Fresh. Innovative. Fun.</h2><br /><br />
-              <button href="../about.html" id="goBtn" type="button" class="btn btn-lg btn-primary" style="color: #ffffff;">
-                <strong>Start</strong><a id="blinky">_</a></button><br /><br /><br />
+              <a href="projects.html" id="goBtn" type="button" class="btn btn-lg btn-primary" style="color: #ffffff;">
+                <strong>Start</strong><span id="blinky">_</span></a><br /><br /><br />
           </div>
-          </div>
+        </div>
       </div>
     </div>
+    <div id="gameModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Temp Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Body placeholder...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-md" data-target="#gameModal" data-toggle="modal" id="secretGameStart">
+        <i class="material-icons">videogame_asset</i>
+    </button>
+    <footer>AWS - 2018</footer>
+    <style>
+      body > .nav {
+        visibility: hidden;
+      }
+    </style>
+    <script>
+        $('.modal-body').css('height', $(window).height() * .5);
+    </script>
   </body>
 </html>

@@ -1,29 +1,21 @@
+/****************Site Custom CSS****************************/
+/**********************************************************/
 body {
+
     background-color: #000000;
 }
 .header-content {
-    margin-left: 50px;
-    color:  #cb4335;
-    font-family: 'Space Mono', monospace;
-    text-shadow: 2px 10px;
-}
-
-.aboutHeaderContent {
-    position: center;
+    background-image: url('../images/ArcadeGame.jpg');
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
-}
+    overflow-x: hidden;
 
-.aboutHeader {
-    position: center;
+}
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
 }
-
-.aboutJumbotron {
-    text-align: center;
-}
-
 .center-block {
     display: block;
     margin-left: auto;
@@ -63,26 +55,123 @@ nav.navbar {
     margin-top: 30px;
 }
 
-#indexHeader {
-    font-family: 'Monoton', cursive;
-    color: #FFFFFF;
-    text-shadow: 0 0 3px #FFFFFF, 0 0 3px #CC5490, 0 0 30px #FF69B4;
-    margin-left: 25px;
+nav.navbar {
+    padding: 10px;
+    background-color: transparent;
+    border-color: transparent;
 }
 
-#goBtn {
-    background-color: #FFC300;
-    border-color: #FFC300;
-    border-radius: 12px;
-    margin-left: 40%;
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
+    .nav {
+      border: none;
+    }
+      .nav > nav > ul {
+        margin-right: 2%;
+        margin-top: 1%;
+        text-align: center;
+        float: right;
+      }
+        .nav > nav > ul > li > a {
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            color: #000000;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0px;
+            padding-top: 18%;
+            text-align: center;
+        }
+        .nav > nav > ul > li > a.active {
+            background-color:#C43B45;
+            border: 1px solid #C43B45;
+            color: #ffffff;
+        }
+        .nav > nav > ul > li > a:hover, 
+        .nav > nav > ul > li > a.active:hover {
+            box-shadow: 0 0 20px 4px  #C43B45;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            color: #C43B45;
+        }
+
+      .popover {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+        .popover > .popover-content {
+            font-family: 'Space Mono', monospace;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 12px;
+        }
+/****************Custom CSS for Index Page******************/
+/**********************************************************/
+
+.header-content {
+    text-align: center;
+}
+
+.modal {
+    margin-top: 60px;
+}
+
+    .modal-content > .modal-header,
+    .modal-content > .modal-body, 
+    .modal-content > .modal-footer {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+    }
+
+#blinky {
+    color: rgb(0, 225, 255);
+    visibility: visible;
     white-space: nowrap;
 }
 
-#goBtn:hover {
-    background-color: #85c1e9;
-    border-color: #85c1e9;
+#indexContainer {
+    position: absolute;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+#indexHeader {
+    font-family: 'Monoton', cursive;
+    font-size: 90px;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px #FFFFFF, 0 5px 5px rgb(0, 225, 255), 0 0 15px rgb(255, 0, 0);
+    text-align: center;
+}
+
+#goBtn {
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 12px;
+    margin-top: 5%;
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+    text-shadow: 0 0 2px #ffffff;
+    white-space: nowrap;
+}
+
+    #goBtn:hover {
+        color: rgb(255, 0, 0);
+    }
+
+#secretGameStart {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 #blinky {
@@ -96,12 +185,25 @@ nav.navbar {
 }
 
 #blinky:hover {
+=======
+    /****************Custom CSS for About Page******************/
+/**********************************************************/
+.aboutHeader {
+    position: center;
     color: #ffffff;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 3px #FFFFFF, 0 0 10px #FF69B4, 0 0 60px #C43B45;
 }
 
-#goBtn:hover {
-    background-color: #900C3F;
-    border-color: #900C3F;
+.aboutHeaderContent {
+    position: center;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+}
+
+.aboutJumbotron {
+    text-align: center;
 }
 
 .img-circle {
@@ -111,24 +213,65 @@ nav.navbar {
 .image-holder {
     border: 5px solid #ffffff;
     background-position: 0;
-    width: 148px;
-    height: 148px;
+    width: 250px;
+    height: 250px;
     background-size: 140px;
     margin-top: -4px;
 }
+    .image-holder:hover {
+        cursor:pointer;
+        box-shadow: 0 0 20px 4px  #C43B45;
+    }
 
-.rb {
-    color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
-    text-align: center;
+h2.rb, 
+h2.ab {
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
 }
 
+.rb, 
 .ab {
     color: #ffffff;
-    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    font-weight: 300;
     text-align: center;
 }
+
+    .rb.text-short, 
+    .ab.text-short {
+        margin-bottom: 5%;
+        font-family: sans-serif 300;
+    }
 
 .text-center {
     text-align: center;
 }
+
+#aboutContainer {
+    margin-top: 25%;
+    margin-bottom: 0px;
+    padding-bottom: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(transparent, #333399 50%);
+}
+
+#aboutMain {
+    margin-top: 6%;
+    margin-bottom: 15%;
+}
+
+    #aboutMain > div > img {
+        margin-bottom: 40px;
+    }
+
+#spaceShip, 
+#mrsPacMan {
+position: fixed;
+height: 50px;
+width: 50px;
+top: 50%;
+transform: rotate(-90deg);
+}
+/**********************************************************/

@@ -144,26 +144,4 @@
         placement: 'bottom',
         trigger: 'hover'
       });
-
-      $('#spaceShip').hide();
-
-      $('.image-holder').on('click', function(e) {
-        $('#spaceShip').show();
-        $('#spaceShip').animate({
-          right: "+=150"
-        }, 2000, function() {
-          $(this).css('transform', 'rotate(0deg)');
-        });
-        $('#spaceShip').animate({
-          top: "-=500"
-        }, 2000, function() {
-          $(this).css('right', '80%');
-          $(this).css('top', '50%');
-          $(this).css('transform', 'rotate(-90deg)');
-          $(this).hide();
-        });
-      });
-    });
-  </script>
-</body>
 </html>
